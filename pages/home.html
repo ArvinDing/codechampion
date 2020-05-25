@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Coding Champion</title>
+<meta name ="description" content = "Free math tutoring in Orange county, California.">
+<meta name ="keywords" content= "Free,Math,Tutoring,Tutor,Irvine,Orange County,California">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body {
+  background-color: lightblue;
+}
+
+.mySlides {display: none
+max-height: 300px
+}
+img {vertical-align: middle;}
+
+p{
+  margin-bottom: 20px;
+  font-family: Helvetica;
+}
+
+
+h2{
+  font-family: Lucida Sans Unicode;
+}
+
+.slideshow-container {
+  max-height: 280px;
+	width:100%;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+	right:0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  color:white;  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.center {
+  text-align: center;
+}
+.dimBack{
+	padding:10px;
+	
+}
+
+.slidePic {
+  object-fit: contain;
+  width: 100%;
+
+	}
+column {
+    float: left;
+    width:520px;
+    padding: 5px;
+
+}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: Black;
+	background:Orange;
+	padding:5px;
+}
+</style>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+
+<div id="nav-placeholder">
+</div>
+
+<div style="margin-top:0px;height:600px;">
+<div class ="dimBack">
+<div class ="center">
+<h1> Who are we?</h1>
+</div>
+<p ><font size="5">Code Champion is a student run organization that offers free coding classes to elementary through high school students.  
+Our curriculum is personalized for each student, and no previous knowledge of coding is required. We are excited to teach kids more about coding and we look forward to share our passion!  
+</font></P>
+<P> <font size="5"> Let us become coding champions!</font></p>
+
+
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSeAfy5L5GA9q8YIui_t82Hz3XFWgNOUqtv0BoWrg8kQ4QiZog/viewform" class="button">Click here to register for Coding Classes</a>
+
+<p>
+If you are interested in becoming a tutor, please fill out the application form <a href="https://docs.google.com/forms/d/e/1FAIpQLSfBfQNShOC3KR_i31Md8yui4bWRBsqYHybrgJvKwv4IPAdTCg/viewform"> here</a>, for all other questions, please click <a href="contact.html">here</a> to contact us.
+</p>
+<!--
+<p>
+If you are a parent interested in sending your child as a student to our program, please click <a href="location.html">here</a> to find the library closest to you and the schedule that works for your child.
+</p>
+-->
+</div>
+
+<div class="slideshow-container">
+<div class="mySlides">
+
+  <img src="img/slideshow/generic2.jpg"  class="slidePic">
+  
+</div>
+<!--
+<div class="mySlides fade" >
+  <img src="img/slideshow/IMG_8231.JPG" class="slidePic"  >
+</div>
+-->
+</div>
+
+
+<!--
+<div style="text-align:left">
+  <span class="dot" onclick="currentSlide(0)"></span>
+  <span class="dot" onclick="currentSlide(1)"></span>
+</div>
+-->
+
+
+<p>
+</p>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("nav.html");
+});
+
+var slideIndex = 0;
+var slidesCnt = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+slideIndex += n;
+slideIndex=(slideIndex+slidesCnt)%slidesCnt;
+  showSlides(slideIndex);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex].style.display = "block";
+  dots[slideIndex].className += " active";
+}
+var ONE_FRAME_TIME = 7500 ;
+var mainloop = function() {
+	plusSlides(1)
+};
+setInterval( mainloop, ONE_FRAME_TIME )
+
+</script>
+
+</body>
+</html>
