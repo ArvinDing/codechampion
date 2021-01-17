@@ -1,268 +1,294 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169257043-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169257043-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'UA-169257043-1');
-</script>
+    gtag('config', 'UA-169257043-1');
+  </script>
 
-<title>Coding Champion</title>
-<meta name ="description" content = "Free coding classes in Orange county, California.">
-<meta name ="keywords" content= "Free,Code,Kids,Coding,Code Champion, Tutoring,Tutor,Irvine,Orange County,California">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Champion</title>
+  <meta name="description" content="Free coding classes in Orange county, California.">
+  <meta name="keywords" content="Free,Code,Kids,Coding,Code Champion, Tutoring,Tutor,Irvine,Orange County,California">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body {
-  background-color: lightblue;
-}
+  <style>
+    body {
+      background-color: lightblue;
+    }
 
-.mySlides {display: none
-max-height: 300px
-}
-img {vertical-align: middle;}
+    .mySlides {
+      display: none max-height: 300px
+    }
 
-p{
-  margin-bottom: 20px;
-  font-family: Helvetica;
-  font-size: 20px
-}
+    img {
+      vertical-align: middle;
+    }
+
+    p {
+      margin-bottom: 20px;
+      font-family: Helvetica;
+      font-size: 20px
+    }
 
 
-h2{
-  font-family: Lucida Sans Unicode;
-}
+    h2 {
+      font-family: Lucida Sans Unicode;
+    }
 
-.slideshow-container {
-	width:100%;
-}
+    .slideshow-container {
+      width: 100%;
+    }
 
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+    }
+
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .text {
+      color: #f2f2f2;
+      font-size: 30px;
+      font-weight: bold;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+      color: white;
+      text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    }
+
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    .center {
+      text-align: center;
+    }
+
+
+    .slidePic {
+      object-fit: contain;
+      width: 100%;
+
+    }
+
+    column {
+      float: left;
+      width: 520px;
+      padding: 5px;
+
+    }
+
+    a.button {
+      -webkit-appearance: button;
+      -moz-appearance: button;
+      appearance: button;
+      width: 200px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      opacity: 0.8;
+      transition: 0.3s;
+      text-decoration: none;
+      color: Black;
+      background: Orange;
+    }
+    .container{
+      position: relative;
+      width: 100%;
+    }
+    a.button:hover {opacity: 1}
+
   
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-.next {
-	right:0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-.text {
-  color: #f2f2f2;
-  font-size: 30px;
-  font-weight: bold;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-  color:white;  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
-}
-
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-
-.center {
-  text-align: center;
-}
-
-
-.slidePic {
-  object-fit: contain;
-  width: 100%;
-
-	}
-column {
-    float: left;
-    width:520px;
-    padding: 5px;
-
-}
-a.button {
-    -webkit-appearance: button;
-    -moz-appearance: button;
-    appearance: button;
-
-    text-decoration: none;
-    color: Black;
-	background:Orange;
-	padding:5px;
-}
-</style>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  </style>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
+
 <body>
 
 
-<div id="nav-placeholder">
-</div>
+  <div id="nav-placeholder">
+  </div>
 
-<div style="margin-top:0px;height:90%;padding:1% 15% 0% 15% ">
-<div class ="center">
-</div>
-<p >Code Champion is a student run organization that offers free coding classes to elementary through high school students.  
-Our curriculum is personalized for each student. No previous knowledge of coding is required.   
-</font></P>
+  <div style="margin-top:0px;height:90%;padding:1% 15% 0% 15% ">
+    <div class="center">
+    </div>
+    <p>Code Champion is a student run organization that offers free coding classes to elementary through high school
+      students.
+      Our curriculum is personalized for each student. No previous knowledge of coding is required.
 
+    </p>
 
-<!--
-<p>
-If you are a parent interested in sending your child as a student to our program, please click <a href="location.html">here</a> to find the library closest to you and the schedule that works for your child.
-</p>
--->
+    <script>
+      $(function () {
+        $("#nav-placeholder").load("nav.html");
+      });
 
+      var slideIndex = 0;
+      var slidesCnt = 1;
+      showSlides(slideIndex);
 
-<!--
-<div style="text-align:left">
-  <span class="dot" onclick="currentSlide(0)"></span>
-  <span class="dot" onclick="currentSlide(1)"></span>
-</div>
--->
+      function plusSlides(n) {
+        slideIndex += n;
+        slideIndex = (slideIndex + slidesCnt) % slidesCnt;
+        showSlides(slideIndex);
+      }
 
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
 
-<p>
-</p>
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
 
-<script>
-$(function(){
-  $("#nav-placeholder").load("nav.html");
-});
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex].style.display = "block";
+        dots[slideIndex].className += " active";
+      }
+      var ONE_FRAME_TIME = 7500;
+      var mainloop = function () {
+        plusSlides(1)
+      };
+      setInterval(mainloop, ONE_FRAME_TIME)
 
-var slideIndex = 0;
-var slidesCnt = 1;
-showSlides(slideIndex);
+    </script>
+  </div>
+  <div class="slideshow-container">
+    <div class="mySlides">
 
-function plusSlides(n) {
-slideIndex += n;
-slideIndex=(slideIndex+slidesCnt)%slidesCnt;
-  showSlides(slideIndex);
-}
+      <img src="img/slideshow/generic3.jpg" class="slidePic">
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex].style.display = "block";
-  dots[slideIndex].className += " active";
-}
-var ONE_FRAME_TIME = 7500 ;
-var mainloop = function() {
-	plusSlides(1)
-};
-setInterval( mainloop, ONE_FRAME_TIME )
-
-</script>
-</div>
-<div class="slideshow-container">
-<div class="mySlides">
-
-  <img src="img/slideshow/generic3.jpg"  class="slidePic">
-  
-</div>
-<!--
+    </div>
+    <!--
 <div class="mySlides fade" >
   <img src="img/slideshow/IMG_8231.JPG" class="slidePic"  >
 </div>
 -->
-<div style="margin-top:0px;height:90%;padding:1% 15% 0% 15% ">
+    <div style="margin-top:0px;height:90%;padding:1% 15% 0% 15% ">
 
 
-<p> 
-2020 Fall Session online classes:
-</P> 
+      <p>
+        2021 Winter Session online classes:
+      </P>
 
-<P>Fall Session 2 classes are held on 10:00 am to 11:00 am PDT each Sunday from 10/18 to 11/8/20. Space is limited. 
-</p>
-
-<p>
-  <img src="img/bluecircle.png" style="height: 7%; width: 7%">
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSexigC66v4fpJnsncdo6lUVcrM5Bi-d397Z0CoHHL-3OooHOA/viewform" class="button" style= "font-family: Helvetica">Register for classes</a> 
-</p>
+      <P>Winter Session 1 classes are held on 9:30 am to 10:30 am PDT on Sundays from 1/24/21 to 2/14/21. Sign Up Now!
+      </p>
 
 
+    
+
+
+
+      <!--
 <p>    <img src="img/bluecircle.png" style="height:7%; width: 7%">
 <a href="https://docs.google.com/forms/d/e/1FAIpQLSeG9Pdhou76SoPxg_JeD9zrd_b__prmxdmEKWauN3x6-vr_oQ/viewform" class="button" style= "font-family: Helvetica">Join the waitlist</a>
 </p>
+-->
 
+   
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSehv6ge3gRbLI324FkmvEzp7tS4jdurQacCuvMJSX1GJUEqPQ/viewform?gxids=7628"
+        class="button" style="font-family: Helvetica;position:relative;left:43%">Student Sign Up </a>
+    
+      <div class="center">
+        
+        <h1> Our Mission </h1>
+      </div>
 
-<div class ="center">
-<h1> Our Mission </h1>
-</div>
+      <p>
+        Code Champion is dedicated to educating all students in computer science regardless of social or financial
+        status. Our goal is to bridge the gap in educational opportunities due to disparities in resources by training
+        kids to be technology savvy at a young age. We are excited to teach students more about coding and we look
+        forward to share our passion!
+      </P>
 
-<p >
-Code Champion is dedicated to educating all students in computer science regardless of social or financial status. Our goal is to bridge the gap in educational opportunities due to disparities in resources by training kids to be technology savvy at a young age. We are excited to teach students more about coding and we look forward to share our passion!  
-</P>
+    </div>
 
-<p>
-If you are interested in becoming a tutor, please fill out the application form <a href="https://docs.google.com/forms/u/3/d/e/1FAIpQLSeW49zImSf0NlPuOCvInVLNK_tu36n3DHjUZiCp0yrbDDmBJg/viewform"> here</a>, for all other questions, please click <a href="contact.html">here</a> to contact us.
-</p>
-</div>
-
-</div>
+  </div>
 
 
 
