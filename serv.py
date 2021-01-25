@@ -1,7 +1,7 @@
 from http.server import HTTPServer, BaseHTTPRequestHandler
 import os
  
- 
+ # comment just to test things out
 class StaticServer(BaseHTTPRequestHandler):
  
     def do_GET(self):
