@@ -23,7 +23,8 @@
     }
 
     .mySlides {
-      display: none max-height: 300px
+      display: none;
+      max-height: 300px
     }
 
     img {
@@ -187,57 +188,14 @@
 
   <div id="nav-placeholder">
   </div>
-
+<!-- 
   <div style="margin-top:0px;height:90%;padding:1% 15% 0% 15% ">
     <div class="center">
     </div>
-    <p>Code Champion is a student run organization that offers free coding classes to elementary through high school
-      students.
-      Our curriculum is personalized for each student. No previous knowledge of coding is required.
+  </div> -->
 
-    </p>
+  <!-- ^^^Any text in the div above will be above the picture/slideshow. -->
 
-    <script>
-      $(function () {
-        $("#nav-placeholder").load("nav.html");
-      });
-
-      var slideIndex = 0;
-      var slidesCnt = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        slideIndex += n;
-        slideIndex = (slideIndex + slidesCnt) % slidesCnt;
-        showSlides(slideIndex);
-      }
-
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex].style.display = "block";
-        dots[slideIndex].className += " active";
-      }
-      var ONE_FRAME_TIME = 7500;
-      var mainloop = function () {
-        plusSlides(1)
-      };
-      setInterval(mainloop, ONE_FRAME_TIME)
-
-    </script>
-  </div>
   <div class="slideshow-container">
     <div class="mySlides">
 
@@ -249,14 +207,14 @@
   <img src="img/slideshow/IMG_8231.JPG" class="slidePic"  >
 </div>
 -->
-    <div style="margin-top:0px;height:90%;padding:1% 15% 0% 15% ">
+    <div style="margin-top:6.5%;height:90%;padding:1% 15% 0% 15% ">
 
 
       <p>
-        2021 Winter Session online classes:
+        2021 Spring Session online classes:
       </P>
 
-      <P>Winter Session 1 classes are held on 9:30 am to 10:30 am PDT on Sundays from 1/24/21 to 2/14/21. Sign Up Now!
+      <P>Basics of Java (BOJ) is a free class for advanced upper-elementary and middle school students (6th-8th) as an introductory course for the core basics of Java. See the BOJ registration form for more information regarding this session's classes.
       </p>
 
 
@@ -271,8 +229,8 @@
 -->
 
    
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSehv6ge3gRbLI324FkmvEzp7tS4jdurQacCuvMJSX1GJUEqPQ/viewform?gxids=7628"
-        class="button" style="font-family: Helvetica;position:absolute;left:42.75%">Student Sign Up </a>
+      <a href="http://tinyurl.com/springboj1" 
+        class="button" style="font-family: Helvetica;position:absolute;left:42.75%;padding:5px;text-align: center;" target="_blank">BOJ Registration Form</a>
         <br>
         <br>
         <br>
@@ -299,7 +257,46 @@
     }
     );
     </script>
+  <script>
+    $(function () {
+      $("#nav-placeholder").load("nav.html");
+    });
 
+    var slideIndex = 0;
+    var slidesCnt = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      slideIndex += n;
+      slideIndex = (slideIndex + slidesCnt) % slidesCnt;
+      showSlides(slideIndex);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex].style.display = "block";
+      dots[slideIndex].className += " active";
+    }
+    var ONE_FRAME_TIME = 7500;
+    var mainloop = function () {
+      plusSlides(1)
+    };
+    setInterval(mainloop, ONE_FRAME_TIME)
+
+  </script>
 
 </body>
 
