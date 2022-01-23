@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+    .button {
+        background-color: rgb(37, 150, 190);
+        /* Green */
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+        cursor: pointer;
+        position: relative;
+        margin-top: 30px;
+        left: 25vw;
+
+    }
+
+    .button1 {
+        padding: 3vh 20vw;
+    }
+
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169257043-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-169257043-1');
+    </script>
+
+    <title>Join us</title>
+    <style>
+        p {
+            font-family: Helvetica;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <div id="nav-placeholder">
+    </div>
+    <div style="padding:20px;margin-top:0px;background-color: lightblue; height:65vh">
+
+        <script>
+            $(function () {
+                $("#nav-placeholder").load("nav.html");
+                $("#footer-placeholder").load("footer.html");
+
+            });
+        </script>
+         <h2 style="text-align:center">Programs & Events</h2>
+
+    <button class="button button1" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScHHMtJKqRVc81kRxbkr4_iRy6oVYVFBlmeRvwwJDIj3Z8Y0Q/viewform'">Basics of Java (BOJ)</button>
+    <button class="button button1" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSfMiMLj_me4DwPv23XWxQmCt3uiy-ZLq8Ht0ps0OS1BHtPC3w/viewform'">Girls in Computing (GIC)</button>
+    <button class="button button1" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScFEnyK1qnvwETuIkCZCYnp-xANz6j-ONg4wdvahg-zAOaE1Q/viewform'">Basics of Python (BOP)</button>
+
+    </div>
+
+
+
+</body>
+<footer>
+    <div id="footer-placeholder"></div>
+</footer>
+
+</html>
